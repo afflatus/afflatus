@@ -25,7 +25,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::__construct
+     * @covers Afflatus\Component\Router\RegexRoutePattern::__construct
      */
     public function testConstruct()
     {
@@ -33,7 +33,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::getUriRegex
+     * @covers Afflatus\Component\Router\RegexRoutePattern::getUriRegex
      */
     public function testGetUriRegex()
     {
@@ -41,7 +41,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::getControllerClass
+     * @covers Afflatus\Component\Router\RegexRoutePattern::getControllerClass
      */
     public function testGetControllerClass()
     {
@@ -49,7 +49,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::getAction
+     * @covers Afflatus\Component\Router\RegexRoutePattern::getAction
      */
     public function testGetAction()
     {
@@ -57,7 +57,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::getRequestMethod
+     * @covers Afflatus\Component\Router\RegexRoutePattern::getRequestMethod
      */
     public function testGetRequestMethod()
     {
@@ -69,7 +69,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::getPriority
+     * @covers Afflatus\Component\Router\RegexRoutePattern::getPriority
      */
     public function testGetPriority()
     {
@@ -81,7 +81,7 @@ class RegexRoutePatternTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers Afflatus\Component\Router\RoutePattern::matchRequestMethod
+     * @covers Afflatus\Component\Router\RegexRoutePattern::matchRequestMethod
      */
     public function testMatchRequestMethod()
     {
