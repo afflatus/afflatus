@@ -39,7 +39,7 @@ class StraightRoutingStrategyTest extends \PHPUnit_Framework_TestCase
     /**
      * @covers Afflatus\Component\Router\StraightRoutingStrategy::getNamespace
      */
-    public function testGetControllerClass()
+    public function testGetNamespace()
     {
         $this->assertEquals('namespace', $this->strategy->getNamespace());
     }
@@ -47,7 +47,7 @@ class StraightRoutingStrategyTest extends \PHPUnit_Framework_TestCase
     /**
      * @covers Afflatus\Component\Router\StraightRoutingStrategy::setNamespace
      */
-    public function testGetAction()
+    public function testSetNamespace()
     {
         $this->strategy->setNamespace('namespace2');
         $this->assertEquals('namespace2', $this->strategy->getNamespace());

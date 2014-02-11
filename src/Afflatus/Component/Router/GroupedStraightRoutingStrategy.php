@@ -12,7 +12,7 @@ class GroupedStraightRoutingStrategy extends StraightRoutingStrategy
     /**
      * @var string
      */
-    protected $regex = '/^\/(a-z)+\/([a-z]+)\/([a-z]+)([\w\/]+)?$/';
+    protected $regex = '/^\/([a-z]+)\/([a-z]+)\/([a-z]+)([\w\/]+)?$/';
 
     /**
      * @param array $match
