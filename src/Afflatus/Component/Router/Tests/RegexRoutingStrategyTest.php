@@ -117,6 +117,7 @@ class RegexRoutingStrategyTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers Afflatus\Component\Router\RegexRoutingStrategy::findDestination
+     * @covers Afflatus\Component\Router\RegexRoutingStrategy::createDestination
      */
     public function testFindDestination()
     {

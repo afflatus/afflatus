@@ -9,7 +9,7 @@ use Afflatus\Component\Router\GroupedStraightRoutingStrategy;
  * @author András Kántor <andr.kantor@gmail.com>
  * @since 2014.02.10. 22:40
  */
-class GroupedStraightRoutingStrategyTest extends StraightRoutingStrategyTest
+class GroupedStraightRoutingStrategyTest extends \PHPUnit_Framework_TestCase
 {
     /**
      * @var GroupedStraightRoutingStrategy
@@ -38,6 +38,8 @@ class GroupedStraightRoutingStrategyTest extends StraightRoutingStrategyTest
 
     /**
      * @covers Afflatus\Component\Router\GroupedStraightRoutingStrategy::findDestination
+     * @covers Afflatus\Component\Router\GroupedStraightRoutingStrategy::createDestination
+     * @covers Afflatus\Component\Router\GroupedStraightRoutingStrategy::getFullControllerClass
      */
     public function testFindDestination()
     {
@@ -50,6 +52,8 @@ class GroupedStraightRoutingStrategyTest extends StraightRoutingStrategyTest
 
     /**
      * @covers Afflatus\Component\Router\GroupedStraightRoutingStrategy::findDestination
+     * @covers Afflatus\Component\Router\GroupedStraightRoutingStrategy::createDestination
+     * @covers Afflatus\Component\Router\GroupedStraightRoutingStrategy::getFullControllerClass
      */
     public function testFindDestinationNoNamespace()
     {

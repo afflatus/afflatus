@@ -18,10 +18,10 @@ class ControllerFactory implements ControllerFactoryInterface
      */
     public function create($class)
     {
-        if (class_exists($class)) {
+        try {
             return new $class();
+        } catch (\Exception $e) {
+            throw new ControllerNotFoundException($class);
         }
-
-        throw new ControllerNotFoundException($class);
     }
 }

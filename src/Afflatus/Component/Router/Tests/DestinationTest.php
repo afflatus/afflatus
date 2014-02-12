@@ -21,7 +21,7 @@ class DestinationTest extends \PHPUnit_Framework_TestCase
      */
     public function setUp()
     {
-        $this->destination = new Destination(__NAMESPACE__ . '\TestController', 'index', array());
+        $this->destination = new Destination(__NAMESPACE__ . '\TestController', 'index', array('argument1'));
     }
 
     /**
@@ -53,7 +53,7 @@ class DestinationTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetArguments()
     {
-        $this->assertEquals(array(), $this->destination->getArguments());
+        $this->assertEquals(array('argument1'), $this->destination->getArguments());
     }
 
     /**

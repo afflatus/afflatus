@@ -55,6 +55,9 @@ class StraightRoutingStrategyTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers Afflatus\Component\Router\StraightRoutingStrategy::findDestination
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::createDestination
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::getFullControllerClass
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::getArguments
      */
     public function testFindDestination()
     {
@@ -67,6 +70,17 @@ class StraightRoutingStrategyTest extends \PHPUnit_Framework_TestCase
 
     /**
      * @covers Afflatus\Component\Router\StraightRoutingStrategy::findDestination
+     */
+    public function testFindDestinationReturnNull()
+    {
+        $this->assertNull($this->strategy->findDestination('/demo', 'GET'));
+    }
+
+    /**
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::findDestination
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::createDestination
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::getFullControllerClass
+     * @covers Afflatus\Component\Router\StraightRoutingStrategy::getArguments
      */
     public function testFindDestinationNoNamespace()
     {

@@ -40,4 +40,14 @@ class ControllerFactoryTest extends \PHPUnit_Framework_TestCase
         $class = 'Afflatus\Component\Router\Tests\TestController';
         $this->assertInstanceOf($class, $this->factory->create($class));
     }
+
+    /**
+     * @covers Afflatus\Component\Router\ControllerFactory::create
+     * @expectedException \Afflatus\Component\Router\Exception\ControllerNotFoundException
+     */
+    public function testCreateException()
+    {
+        $class = 'Afflatus\Component\Router\Tests\TestControllerBadClassName';
+        $this->factory->create($class);
+    }
 }
